@@ -4,7 +4,27 @@
 }
 
 body{
-    background: linear-gradient(to right,#54798d,#07151d);
+    background: linear-gradient(to right,#314d58,#162630);
     color: white;
 
+}
+
+.playings{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.play{
+    font-size: 4.5rem;
+    margin-top: 4rem;
+    background: none;
+    border:none;
+    margin-right: 3rem;
+}
+
+.play:hover{
+    transform:scale(.9);
+    cursor: pointer;
+    transition: 400ms;
 }
