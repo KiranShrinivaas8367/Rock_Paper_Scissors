@@ -28,3 +28,15 @@ body{
     cursor: pointer;
     transition: 400ms;
 }
+
+.result{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 2.5rem;
+    font-size: 2.7rem;
+    color: #c3d8e4;
+
+}
