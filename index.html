@@ -10,20 +10,23 @@
 </head>
 <body>
     <div class="playings">
-        <button class="play">👊</button>
-        <button class="play">✋</button>
-        <button class="play">✌️</button>
+        <button class="play" data-selection="rock">👊</button>
+        <button class="play" data-selection="paper">✋</button>
+        <button class="play" data-selection="scissors">✌️</button>
     </div>
 
     <div class="result">
         <div>YOU:
             <span class="score">0</span>
         </div>
-        <div>
+        <div data-final-column>
             COMPUTER:
             <span class="score">0</span>
         </div>
+        <!-- <div class="result-selection winner">👊</div>
+        <div class="result-selection">✌️</div> -->
     </div>
+
 </body>
 
 <script src="main.js"></script>
