@@ -47,6 +47,10 @@ function addSelectionResult(selection,winner){
     finalColumn.after(div)
 }
 
+function isWinner(selection,opponentSelection){
+    return selection.defeats == opponentSelection.name;
+}
+
 function randomGeneration(){
     const randomIndex = Math.floor(Math.random()*selections.length);
     return selections[randomIndex]
