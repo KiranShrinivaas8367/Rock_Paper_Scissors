@@ -44,10 +44,22 @@ body{
 }
 
 .result > div:nth-child(2){
-    margin-right: 20rem;
+    margin-right: 2rem;
 }
 
 .score{
     margin-left: 1.2rem;
     font-size: 2rem;
+}
+
+.result-selection{
+    opacity: .5;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.result-selection.winner{
+    text-align: center;
+    opacity: 1;
+    margin-top: 2rem;
 }
