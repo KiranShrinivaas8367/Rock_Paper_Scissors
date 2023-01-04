@@ -1,6 +1,24 @@
 const selectButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 
+const selections = [
+    {
+        name: 'rock',
+        emoji: '👊',
+        defeats: 'scissors'
+    },
+    {
+        name: 'paper',
+        emoji: '✋',
+        defeats: 'rock'
+    },
+    {
+        name: 'scissors',
+        emoji: '✌️',
+        defeats: 'paper'
+    }
+]
+
 selectButtons.forEach(selectButton => 
 {
     selectButton.addEventListener('click',() => {
@@ -27,10 +45,6 @@ function addSelectionResult(selection,winner){
     div.classList.add('result-selection')
     if(winner) div.classList.add('winner')
     finalColumn.after(div)
-}
-
-function isWinner(selection,opponentSelection){
-    return selection.defeats == opponentSelection.name;
 }
 
 function randomGeneration(){
