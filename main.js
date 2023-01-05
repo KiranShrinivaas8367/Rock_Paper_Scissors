@@ -45,6 +45,7 @@ function makeSelection(selection){
 }
 
 function incrementScore(scorespan){
+    scorespan.classList.add('scoreresult')
     scorespan.innerText = parseInt(scorespan.innerText)+1
     return scorespan.innerText
 }
