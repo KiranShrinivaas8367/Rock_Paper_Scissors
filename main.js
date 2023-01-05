@@ -32,6 +32,7 @@ selectButtons.forEach(selectButton =>
 
 function makeSelection(selection){
     // console.log(selection);
+    debugger;
     const computerSelection = randomGeneration();
     const yourWinner = isWinner(selection,computerSelection)
     const computerWinner = isWinner(computerSelection,selection)
