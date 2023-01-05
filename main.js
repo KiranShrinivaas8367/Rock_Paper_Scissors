@@ -1,5 +1,7 @@
 const selectButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
+const yourScoreSpan = document.querySelector('[data-your-score]')
+const computerScoreSpan = document.querySelector('[data-computer-score]')
 
 const selections = [
     {
@@ -37,6 +39,14 @@ function makeSelection(selection){
     addSelectionResult(computerSelection,computerWinner)
     addSelectionResult(selection,yourWinner)
     console.log(computerSelection);
+
+    if(yourWinner) incrementScore(yourScoreSpan)
+    else incrementScore(computerScoreSpan)
+}
+
+function incrementScore(scorespan){
+    scorespan.innerText = parseInt(scorespan.innerText)+1
+    return scorespan.innerText
 }
 
 function addSelectionResult(selection,winner){
