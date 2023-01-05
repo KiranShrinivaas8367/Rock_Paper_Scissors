@@ -63,3 +63,8 @@ body{
     opacity: 1;
     margin-top: 2rem;
 }
+
+.scoreresult{
+    color: gray;
+    font-size: 3rem;
+}
