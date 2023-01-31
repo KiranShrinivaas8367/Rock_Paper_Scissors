@@ -68,3 +68,14 @@ body{
     color: gray;
     font-size: 3rem;
 }
+
+.result-para{
+    font-size:3rem;
+    font-family: 'Questrial', sans-serif;
+    color:#919fac;
+    text-align: center;
+    border-bottom: 3px dotted gray;
+    margin:5rem 22rem;
+    text-transform: uppercase;
+    animation: in 2s ease-out infinite;
+}
