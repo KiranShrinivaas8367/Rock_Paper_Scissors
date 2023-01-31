@@ -85,3 +85,28 @@ body{
     opacity:0.8;
     transform:scale(1.1);
 }
+
+/*---------keyframes---------------*/
+  
+@keyframes in {
+    0% {
+        letter-spacing: 0rem;
+      }
+      80% {
+        letter-spacing: 1.2rem;
+      }
+      100% {
+        letter-spacing: 1.2rem;
+      }
+    
+    from{
+      border-color:#c3d8e4;
+      border-style: solid;
+      border-radius: 1rem;
+    }
+    to{
+      border-color: #c3d8e4;
+      border-style: dotted;
+      border-radius: 1rem;
+    }
+  }
