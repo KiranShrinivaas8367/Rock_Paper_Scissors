@@ -35,6 +35,9 @@ selectButtons.forEach(selectButton =>
 function makeSelection(selection){
     // console.log(selection);
     debugger;
+
+    if(count==total_matches)
+    return;
     const computerSelection = randomGeneration();
     const yourWinner = isWinner(selection,computerSelection)
     const computerWinner = isWinner(computerSelection,selection)
@@ -47,6 +50,18 @@ function makeSelection(selection){
      user = incrementScore(yourScoreSpan)
     else 
     computer = incrementScore(computerScoreSpan)
+
+    count++;
+    if(count==total_matches){
+        const div=document.createElement('div')
+        if(user>computer)
+        div.innerText='You won the game 😇'
+        else
+        div.innerText='😊 Better luck next move 🤞'
+        
+        div.classList.add('result-para')
+        finalresult.append(div)
+    }
 }
 
 function incrementScore(scorespan){
