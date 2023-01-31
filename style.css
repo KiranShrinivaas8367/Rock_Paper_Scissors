@@ -79,3 +79,9 @@ body{
     text-transform: uppercase;
     animation: in 2s ease-out infinite;
 }
+
+.result-para:hover{
+    color:gray;
+    opacity:0.8;
+    transform:scale(1.1);
+}
