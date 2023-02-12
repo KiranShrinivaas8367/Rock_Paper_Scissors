@@ -41,21 +41,27 @@ function makeSelection(selection){
     const computerSelection = randomGeneration();
     const yourWinner = isWinner(selection,computerSelection)
     const computerWinner = isWinner(computerSelection,selection)
+    console.log(yourWinner,computerWinner);
 
     addSelectionResult(computerSelection,computerWinner)
     addSelectionResult(selection,yourWinner)
     console.log(computerSelection);
 
+    if(!(yourWinner==0 && computerWinner==0))
+    {
     if(yourWinner)
      user = incrementScore(yourScoreSpan)
     else 
     computer = incrementScore(computerScoreSpan)
+    }
 
     count++;
     if(count==total_matches){
         const div=document.createElement('div')
         if(user>computer)
         div.innerText='You won the game 😇'
+        else if(user == computer)
+        div.innerText='Match draw'
         else
         div.innerText='😊 Better luck next move 🤞'
         
